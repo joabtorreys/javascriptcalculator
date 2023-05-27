@@ -4,19 +4,27 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: lightcyan;
+}
+
+
+
 .header {
-    background-color: aqua;
     height: 20vh;
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .header h1 {
-    color: red;
-    text-transform: capitalize;
-    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+
 }
 
 .container {
@@ -24,7 +32,7 @@
     height: 80vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .calculator {
@@ -34,19 +42,6 @@
 
 
 }
-
-.display {
-    display: flex;
-    justify-content: flex-end;
-    margin: 15px 0;
-}
-
-.display input {
-    flex: 1;
-    text-align: right;
-    font-size: 30px;
-}
-
 
 
 .calculator form input {
@@ -62,6 +57,19 @@
     margin: 6px;
 }
 
+.display {
+    display: flex;
+}
+
+
+.display input {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+
 .last-row {
     display: flex;
 }
@@ -72,4 +80,22 @@
 
 .last-row .equal {
     flex: 2;
+    color: rgb(182, 95, 95);
+}
+
+.footer {
+    position: fixed;
+    bottom: 5%;
+    left: 8%;
+}
+
+.footer h5 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    opacity: 0.8;
+}
+
+form input.operator {
+    color: rgb(92, 158, 92);
 }
